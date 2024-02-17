@@ -11,7 +11,7 @@ def search(args: list):
     id_list=[]
     for arg in args:
         titles[arg] = (input('Введите ' + arg + ': '))
-
+    # Поиск данных в формате ключ: значение Среди всех данных
     for file_name in files:
         with open('data/' + file_name, 'r') as file:
             file_lines = file.readlines()
