@@ -3,7 +3,8 @@ import argparse
 
 characteristics = ['фамилия', 'имя', 'отчество', 'организация', 'раб-ном', 'лич-ном']
 
-def edit(id, attr):
+def edit(str: id,str: attr):
+    
     changed_char = input('Введите данные для заданной характеристики: ')
     with open('data/' + id + '.txt', 'r') as file:
         file_lines = file.readlines()
