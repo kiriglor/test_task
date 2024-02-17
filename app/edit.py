@@ -3,9 +3,6 @@ import argparse
 
 characteristics = ['фамилия', 'имя', 'отчество', 'организация', 'раб-ном', 'лич-ном']
 
-class InvalidChar(Exception):
-    pass
-
 def edit(id, attr):
     changed_char = input('Введите данные для заданной характеристики: ')
     with open('data/' + id + '.txt', 'r') as file:
